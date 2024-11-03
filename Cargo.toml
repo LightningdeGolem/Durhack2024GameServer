@@ -1,0 +1,15 @@
+[package]
+name = "game_server"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+prost-stream = { version = "0.1.2", features = ["async"] }
+log = "0.4.22"
+prost = "0.12.6"
+simple_logger = "5.0.0"
+tokio = { version = "1.41.0", features = ["full"] }
+rand = "0.8.5"
+
+[build-dependencies]
+prost-build = "0.13.3"
